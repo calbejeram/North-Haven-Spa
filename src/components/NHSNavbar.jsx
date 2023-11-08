@@ -1,4 +1,5 @@
 import React from 'react';
+import "../static/css/navbar.css"
 import nhslogo from "../static/images/NHSlogo.png";
 import nhsbrandname from "../static/images/NHSBrandname.png";
 import { Container, Navbar, Nav, Offcanvas, Stack } from 'react-bootstrap';
@@ -6,7 +7,7 @@ import { Container, Navbar, Nav, Offcanvas, Stack } from 'react-bootstrap';
 const NHSNavbar = () => {
   return (
     <>
-        <Navbar expand="lg" className="bg-body-tertiary navbar position-fixed w-100 z-1">
+        <Navbar expand="lg" className="bg-body-tertiary navbar position-fixed w-100">
           <Container>
             <Navbar.Brand href="#">
               <Stack direction='horizontal' gap={3}>
@@ -30,7 +31,7 @@ const NHSNavbar = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <Nav.Link href="#">Home</Nav.Link>
                   <Nav.Link href="#action2">Services</Nav.Link>
                   <Nav.Link href="#action3">Gallery</Nav.Link>
                   <Nav.Link href="#action4">About Us</Nav.Link>

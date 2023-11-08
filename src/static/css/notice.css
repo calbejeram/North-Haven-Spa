@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+#notice {
+    position: relative;
+}
+
+.notice-title {
+    font-family: 'Philosopher', sans-serif !important;
+}
+
+#notice::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../images/noticebg.jpg") no-repeat center center/ cover;
+    opacity: 0.4;
+    z-index: -10;
+}
+
+#notice::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../images/noticewave.svg") no-repeat center center/ cover;
+    opacity: 0.3;
+    z-index: -10;
+}
