@@ -1,8 +1,9 @@
 import React from 'react';
-import "../static/css/notice.css"
+import "../static/css/notice.css";
 import nhsbrandlogo from "../static/images/NHSlogo.png";
+import leaves from "../static/images/notice-leaves.png";
 import { Alert, Box, Typography } from '@mui/material';
-import { Col, Container, Row, Stack } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Notice = () => {
 
@@ -21,10 +22,10 @@ const Notice = () => {
 
   return (
     <>
-        <Box id="notice">
+        <Box id="notice" className="py-5">
             <Container>
                 <Row>
-                    <Col xs={12} className='d-flex align-items-center justify-content-center mt-5 mb-3'>
+                    <Col xs={12} className='d-flex align-items-center justify-content-center mb-3'>
                         <img src={nhsbrandlogo} width={250} alt="North Haven Spa Brand Logo" />
                     </Col>
                     <Col xs={12} className='d-flex flex-column align-items-center justify-content-center'>
@@ -46,6 +47,7 @@ const Notice = () => {
                             We aspire to your continued support and loyalty to <span className='fw-bold'>North Haven Spa </span>
                             and vow to continue providing excellent servies for you.
                         </Typography>
+                        <img src={leaves} alt="North Haven Spa Leave" />
                     </Col>
                 </Row>
             </Container>
