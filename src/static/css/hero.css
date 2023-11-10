@@ -37,6 +37,33 @@
     font-family: 'Philosopher', sans-serif !important;
 }
 
+.services-button {
+    background-color: #2F6130 !important;
+    color: #BCEABD !important;
+    font-size: 1.4rem !important;
+    font-family: 'Philosopher', sans-serif !important;
+    border: 1px solid #BCEABD !important;
+    position: relative;
+}
+
+.services-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 200px;
+    bottom: 0;
+    left: 0;
+    background: #40ee4c;
+    opacity: 0.5;
+    z-index: -22;
+    transition: 0.5s ease;
+}
+
+.services-button:hover::before {
+    right: 0;
+    transition: 0.5s;
+}
+
 @media only screen and (max-width: 992px) {
     .hero-title {
         font-size: 3rem !important;

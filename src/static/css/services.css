@@ -32,7 +32,24 @@
 .card-text,
 .services-subtitle {
     font-family: 'Philosopher', sans-serif !important;
+    position: relative;
 }
+
+/* .card-title::before {
+    border-bottom: 3px solid black;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.card-title:hover::before {
+    right: 0;
+    transition: 0.5s;
+} */
 
 .card-content {
     background-color: #2F6130;
@@ -59,10 +76,10 @@
 }
 
 .cards::before {
-    content: "Explore";
+    content: "";
     position: absolute;
     top: 0;
-    right: 0;
+    right: 100%;
     bottom: 0;
     left: 0;
     color: white;
@@ -79,6 +96,9 @@
 
 .cards:hover::before { /* Fix the selector here to target the ::before of .cards when hovered */
     opacity: 1; /* Set opacity to 1 on hover to make the overlay visible */
+    content: "Explore";
+    right: 0;
+    transition: 0.7s;
 }
 
 .card-link:hover .cards {

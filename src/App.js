@@ -4,6 +4,7 @@ import NHSNavbar from "./components/NHSNavbar";
 import Notice from "./components/Notice";
 import Services from "./components/Services";
 import NHSFooter from "./components/NHSFooter";
+import Gallery from "./components/Gallery";
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Notice/>
           <Services/>
           <AboutUs/>
+          <Gallery/>
         </main>
         <footer>
           <NHSFooter/>

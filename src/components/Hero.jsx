@@ -18,7 +18,7 @@ const Hero = () => {
                         <Typography variant='h5' className='text-white z-1 mb-3 hero-subtitle'>
                             Guide you towards a world of rejuvenation and healing.
                         </Typography>
-                        <Button variant="contained" className='z-1 bg-success'>See services</Button>
+                        <Button href='#services' variant="contained" className='z-1 rounded-0 services-button'>See services</Button>
                     </Col>
                 </Row>
             </Container>

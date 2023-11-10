@@ -31,6 +31,13 @@
     left: 0;
     background-color: black;
     opacity: 0.5;
+    transition: 0.5s;
+}
+
+.about-us-card:hover::before {
+    background-color: none;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .about-card-0::after {
@@ -95,4 +102,12 @@
     justify-content: center;
     font-size: 1.5rem;
     font-family: 'Philosopher', sans-serif !important;
+}
+
+.about-card-0:hover::after,
+.about-card-1:hover::after,
+.about-card-2:hover::after,
+.about-card-3:hover::after {
+    content: "";
+    cursor: pointer;
 }

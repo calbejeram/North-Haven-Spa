@@ -54,8 +54,8 @@ const NHSFooter = () => {
                         <Link><FacebookIcon/></Link>
                     </Col>
                 </Row>
-                <hr />
-                <Typography>Allrights reserved @ <span className='fw-bold'>North Haven Spa</span></Typography>
+                <hr className='m-1' />
+                <Typography variant='subtitle1'>Allrights reserved @ <span className='fw-bold'>North Haven Spa</span></Typography>
             </Container>
         </Box>
     </>

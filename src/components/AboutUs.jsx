@@ -44,7 +44,7 @@ const AboutUs = () => {
                         </Row>
                     </Col>
                     <Col xs={12} lg={6} className='d-flex flex-column align-items-center justify-content-start about-us-col p-4'>
-                        <img src={nhsbrandlogo} width={250} alt="North Haven Spa Brand Logo" className='mb-3' />
+                        <img src={nhsbrandlogo} width={150} alt="North Haven Spa Brand Logo" className='mb-3' />
                         <Typography className='col-text'>
                             In the 1800s, the discovery of Baguio, known as a "Shangrila" in the mountains, turned it into a haven for healing and relaxation, especially for tired soldiers. It later evolved into the Summer Capital of the Philippines. <span className='fw-bold'>North Haven Spa</span> continues the spirit of this discovery by offering more than just relaxation. Housed in a transformed 1960s Baguio home, it blends old church bricks and river stones for a soothing atmosphere, preserving the Old Baguio charm. The spa offers indigenous massages and unique scrubs like strawberry, cordillera rice, and Benguet coffee. It's a place to escape, exhale, and find harmony for mind, body, and soul.
                         </Typography>

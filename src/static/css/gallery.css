@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
+
+.gallery-text {
+    font-size: 3rem !important;
+    text-align: center;
+    font-weight: bolder !important;
+    font-family: 'Philosopher', sans-serif !important;
+}
+
+.gallery-button {
+    background-color: #2F6130 !important;
+    color: #BCEABD !important;
+    font-size: 0.8rem !important;
+    font-family: 'Philosopher', sans-serif !important;
+    border: 1px solid #BCEABD !important;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background: #40ee4c;
+    opacity: 0.5;
+    z-index: -1;
+    transition: 0.5s ease;
+}
+
+.gallery-button:hover::before {
+    right: 0;
+    transition: 0.5s;
+}
+
+.gallery-col {
+    /* background-color: red; */
+    position: relative;
+}
+
+.gallery-col::before {
+    content: "GALLERY";
+    position: absolute;
+    top: 20%;
+    right: 0;
+    bottom: 0;
+    left: 25%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-lr; /* Vertical writing mode from bottom to top */
+    text-orientation: upright; /* Ensure each letter is upright */
+    font-size: 3rem;
+    color: #6b6b6b;
+    font-family: 'Philosopher', sans-serif !important;
+    letter-spacing: 0.9rem;
+}
