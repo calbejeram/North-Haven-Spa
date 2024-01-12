@@ -1,30 +1,30 @@
 import React from 'react';
 import "../static/css/services.css";
+import nhslogo from "../static/images/NHSlogo.png";
 import servicesData from "../instances/ServicesData";
 import nhsservices from "../static/images/NHSServices.png";
-import { Box, Typography } from '@mui/material';
-import { Col, Container, Row } from 'react-bootstrap';
-import Card from '@mui/material/Card';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import { Link } from 'react-router-dom';
+import { Box, Typography, Button } from '@mui/material';
+import { Col, Container, Row, Card } from 'react-bootstrap';
 
 const Services = () => {
     
-    const serviceCard = servicesData.map(item => {
+    const serviceCard = servicesData.map((item, index) => {
         return (
             <Col xs={6} lg={3} key={item}>
                 <Link to="#" className='card-link'>
-                    <Card sx={{ maxWidth: 345 }} className='rounded-0 cards'>
-                        <CardMedia
-                            sx={{ height: {xs: 200, lg: 250} }}
-                            image={item.imgUrl}
-                            className='card-image'
-                        />
-                        <CardContent className='py-2 px-3 card-content'>
-                            <Typography variant="h6" className='card-title fw-bold text-white'>
-                            {item.serviceTitle}
-                            </Typography>
+                    <Card className={`service-card service-card-${index} cards`}>
+                        <Box className="p-2">
+                            <img src={nhslogo} alt="North Haven Spa Logo" width={50} />
+                        </Box>
+                        <CardContent className='h-100 d-flex flex-column justify-content-end p-2'>
+                            <Typography className='card-text text-white py-1 px-2'>{item.serviceTitle}</Typography>
+                            <Button variant='contained' className='d-flex align-items-center rounded-0 py-1 px-2 justify-content-start card-button text-white'>
+                                Explore
+                                <ArrowForwardIcon className='arrow-icon ms-2'/>
+                            </Button>
                         </CardContent>
                     </Card>
                 </Link>

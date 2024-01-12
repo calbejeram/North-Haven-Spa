@@ -43,7 +43,7 @@
 .gallery-col::before {
     content: "GALLERY";
     position: absolute;
-    top: 20%;
+    top: 25%;
     right: 0;
     bottom: 0;
     left: 25%;
@@ -55,7 +55,7 @@
     writing-mode: vertical-lr; /* Vertical writing mode from bottom to top */
     text-orientation: upright; /* Ensure each letter is upright */
     font-size: 3rem;
-    color: #6b6b6b;
+    color: rgba(255, 0, 0, 0.4);
     font-family: 'Philosopher', sans-serif !important;
     letter-spacing: 0.9rem;
 }
